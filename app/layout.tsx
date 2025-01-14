@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-<<<<<<< HEAD
 import { Raleway } from "next/font/google";
 import "./globals.css";
 
@@ -7,20 +6,6 @@ const raleway = Raleway({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
 })
-=======
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
->>>>>>> 5f89100dccf6672f866e7de1f850e57490761b44
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -33,17 +18,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-<<<<<<< HEAD
     <html lang="en" className={raleway.className}>
       <body className="bg-slate-50 text-slate-900">
       {children}
-=======
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
->>>>>>> 5f89100dccf6672f866e7de1f850e57490761b44
       </body>
     </html>
   );
