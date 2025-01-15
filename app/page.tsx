@@ -5,40 +5,14 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import AnimatedParagraph from './components/AnimatedParagraph';
 import './globals.css';
+import Header from './components/Header';
+import ProjectCard from './components/ProjectCard';
+import { projects } from './constants/projects';
 
 const Home: FC = () => {
   return (
     <main>
-      <header className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8">
-        <nav className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
-          {/*Left side of the header*/}
-          <div>
-            <a href="/" className="text-lg font-medium">
-              Justin Pryor
-            </a>
-          </div>
-          {/*Right side of the header*/}
-          <div className="flex items-center gap-4 sm:gap-8">
-            <a href="/" className="text-blue-500 text-sm sm:text-base">Home</a>
-            <a 
-    href="https://docs.google.com/document/d/1en4LjA52kor9kICJB1j14FYuVs7WxZsbtIvLAqA0diU/edit?tab=t.0" 
-    className="px-4 py-2 bg-blue-400 text-white rounded-md text-sm sm:text-base hover:bg-blue-600 transition-colors"
-    target="_blank" 
-    rel="noopener noreferrer"
-  >
-    Resume
-  </a>
-  
-  <a 
-    href="mailto:jpryor812@gmail.com?subject=You're%20Hired!" 
-    className="px-4 py-2 text-white rounded-md text-sm sm:text-base hover:scale-125 transition-all animate-color-change"
-    >
-    Email Me
-  </a>
-</div>
-        </nav>
-      </header>
-
+      <Header />
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
   <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
     {/* Left side - Text */}
@@ -51,7 +25,7 @@ const Home: FC = () => {
         ease: [0.215, 0.610, 0.355, 1.000] // Cubic bezier for smooth slide
       }}
     >
-      <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold">
+      <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold">
         I'm Justin, a founder, builder, and fanatic of excellent user experiences that save time and frustration.
       </h1>
     </motion.div>
@@ -81,8 +55,8 @@ const Home: FC = () => {
         <Image 
   src="/profile_picture.jpg"
   alt="Justin Pryor"
-  width={224} // Tailored for w-56 (14rem)
-  height={224} // Tailored for h-56 (14rem)
+  width={200} // Tailored for w-56 (14rem)
+  height={200} // Tailored for h-56 (14rem)
   className="relative z-10 rounded-lg object-cover"
 />
       </div>
@@ -105,50 +79,22 @@ const Home: FC = () => {
   </motion.h2>
 </section>
 
-<section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-  <motion.div 
-    className="relative"
-    initial={{ opacity: 0, y: 50 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{
-      duration: 0.7,
-      delay: 1.8, // slightly longer delay than the title for a staggered effect
-      ease: [0.215, 0.610, 0.355, 1.000]
-    }}
-  >
-    {/* Light blue backdrop */}
-    <div className="bg-blue-50 rounded-lg w-full h-84 sm:h-96"></div>
-    
-    {/* NUFRIENDS image positioned over the backdrop */}
-    <div className="absolute inset-0 flex items-center justify-center">
-      <img 
-        src="/nufriends_logo_final.png"
-        alt="NUFRIENDS"
-        className="w-auto h-96 object-contain"
-      />
-    </div>
-    
-    {/* Text overlaying both backdrop and image */}
-    <div className="absolute inset-0 flex items-center justify-center">
-      <h2 
-        className="text-4xl sm:text-5xl font-bold"
-        style={{
-          color: 'black',
-          textShadow: `
-            -2px -2px 0 #fff,
-             2px -2px 0 #fff,
-            -2px  2px 0 #fff,
-             2px  2px 0 #fff
-          `
-        }}
-      >
-        NUFRIENDS
-      </h2>
-    </div>
-  </motion.div>
-</section>
+      {/* Projects section - new interactive cards */}
+      {projects.map((project, index) => (
+        <ProjectCard
+          key={project.title}
+          {...project}
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.7,
+            delay: 1.8 + (index * 0.2), 
+            ease: [0.215, 0.610, 0.355, 1.000]
+          }}
+        />
+      ))}
 
-<section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
     {/* UserJourney.blog container */}
     <motion.div 
@@ -230,7 +176,7 @@ const Home: FC = () => {
   </div>
 </section>
 
-<section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 py-6">
+<section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-4 py-6">
   <motion.h2 
     className="text-2xl md:text-3xl lg:text-4xl font-semibold text-center"
     initial={{ opacity: 0, y: 125 }}
@@ -248,7 +194,7 @@ const Home: FC = () => {
 </section>
 
 
-<section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
     {/* SuuM container */}
     <motion.div 
@@ -623,7 +569,7 @@ const Home: FC = () => {
     {/* Social Links */}
     <div className="flex justify-center items-center gap-12">
       <a 
-        href="https://github.com/YourGithubUsername" 
+        href="https://github.com/jpryor812" 
         target="_blank" 
         rel="noopener noreferrer" 
         className="hover:opacity-80 transition-opacity"
@@ -631,7 +577,7 @@ const Home: FC = () => {
         <img src="/mdi_github.png" alt="GitHub" className="w-10 h-10" />
       </a>
       <a 
-        href="https://youtube.com/YourChannel" 
+        href="https://www.youtube.com/channel/UC_bS1W9O8jpTE6gG9wss1rg" 
         target="_blank" 
         rel="noopener noreferrer" 
         className="hover:opacity-80 transition-opacity"
@@ -639,7 +585,7 @@ const Home: FC = () => {
         <img src="/logos_youtube-icon.png" alt="YouTube" className="w-14 h-10" />
       </a>
       <a 
-        href="https://linkedin.com/in/YourProfile" 
+        href="https://www.linkedin.com/in/justin-pryor-959352150/" 
         target="_blank" 
         rel="noopener noreferrer" 
         className="hover:opacity-80 transition-opacity"
@@ -647,7 +593,7 @@ const Home: FC = () => {
         <img src="/devicon_linkedin.png" alt="LinkedIn" className="w-10 h-10" />
       </a>
       <a 
-        href="https://twitter.com/YourHandle" 
+        href="https://x.com/Justin_Pryor_" 
         target="_blank" 
         rel="noopener noreferrer" 
         className="hover:opacity-80 transition-opacity"
@@ -660,7 +606,7 @@ const Home: FC = () => {
     <div className="flex flex-col items-center space-y-4">
   <p className="text-xl">This site was build with Next.js, React, Framer Motion, and TailwindCSS.</p>
   <a 
-    href="https://github.com/YourUsername/YourRepo" 
+    href="https://github.com/jpryor812/justinpryor.me" 
     className="text-xl underline hover:opacity-80 transition-opacity"
     target="_blank" 
     rel="noopener noreferrer"

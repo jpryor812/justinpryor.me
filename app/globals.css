@@ -23,7 +23,7 @@ body {
 @keyframes colorChange {
   0% { background-color: rgb(59, 130, 246); }    /* blue-500 */
   33% { background-color: rgb(99, 229, 241); }   /* indigo-500 */
-  66% { background-color: rgb(247, 195, 63); }   /* purple-500 */
+  66% { background-color: rgb(95, 49, 249); }   /* purple-500 */
   100% { background-color: rgb(59, 130, 246); }  /* back to blue-500 */
 }
 
