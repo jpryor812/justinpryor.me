@@ -4,6 +4,7 @@ import { type FC } from 'react';
 import Image from "next/image";
 import { motion } from "framer-motion";
 import AnimatedParagraph from './components/AnimatedParagraph';
+import './globals.css';
 
 const Home: FC = () => {
   return (
@@ -19,9 +20,22 @@ const Home: FC = () => {
           {/*Right side of the header*/}
           <div className="flex items-center gap-4 sm:gap-8">
             <a href="/" className="text-blue-500 text-sm sm:text-base">Home</a>
-            <a href="https://docs.google.com/document/d/1en4LjA52kor9kICJB1j14FYuVs7WxZsbtIvLAqA0diU/edit?tab=t.0" className="text-sm sm:text-base">Resume</a>
-            <a href="mailto:jpryor812@gmail.com" className="hover:text-gray-600 text-sm sm:text-base">Email Me</a>
-          </div>
+            <a 
+    href="https://docs.google.com/document/d/1en4LjA52kor9kICJB1j14FYuVs7WxZsbtIvLAqA0diU/edit?tab=t.0" 
+    className="px-4 py-2 bg-blue-400 text-white rounded-md text-sm sm:text-base hover:bg-blue-600 transition-colors"
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    Resume
+  </a>
+  
+  <a 
+    href="mailto:jpryor812@gmail.com?subject=You're%20Hired!" 
+    className="px-4 py-2 text-white rounded-md text-sm sm:text-base hover:scale-125 transition-all animate-color-change"
+    >
+    Email Me
+  </a>
+</div>
         </nav>
       </header>
 
@@ -317,7 +331,7 @@ const Home: FC = () => {
   </div>
 </section>
 
-<section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] rounded-lg">
   <motion.h2
     className="text-3xl md:text-4xl font-bold mb-8 text-center"
     initial={{ opacity: 0, y: 20 }}
@@ -359,7 +373,7 @@ const Home: FC = () => {
   </div>
 </section>
 
-<section className="max-w-4xl mx-auto px-2 sm:px-4 lg:px-6 pt-6 pb-2">
+<section className="max-w-4xl mx-auto px-2 sm:px-4 lg:px-6 pt-24">
   <motion.h2
     className="text-3xl md:text-4xl font-bold mb-8 text-center"
     initial={{ opacity: 0, y: 20 }}
@@ -371,7 +385,7 @@ const Home: FC = () => {
   </motion.h2>
 </section>
 
-<section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+<section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-4">
   <motion.div 
     className="relative w-full aspect-[16/9]" // 16:9 aspect ratio for presentations
     initial={{ opacity: 0, y: 125 }}
@@ -383,7 +397,6 @@ const Home: FC = () => {
       bounce: 0.6
     }}
   >
-    {/* Yellow backdrop */}
     <div className="bg-gray-100 rounded-lg absolute inset-0"></div>
     
     {/* Presentation container */}
@@ -401,7 +414,7 @@ const Home: FC = () => {
 </section>
 
 <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 p-6 bg-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] rounded-lg">
     {/* Left Column */}
     <div>
       <motion.h2
@@ -414,27 +427,35 @@ const Home: FC = () => {
         What I Can Bring to a Role
       </motion.h2>
 
-      <div className="space-y-4">
-        <AnimatedParagraph>
-          Well, as I hope you assumed based on my previous answer, I will be a love for the craft.
-        </AnimatedParagraph>
+      <motion.div 
+        className="p-6 bg-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] rounded-lg"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+      >
+        <div className="space-y-4">
+          <AnimatedParagraph>
+            Well, as I hope you assumed based on my previous answer, I will be a love for the craft.
+          </AnimatedParagraph>
 
-        <AnimatedParagraph delay={0.2}>
-          I feel the most focused in my life when solving a problem and I feel like coding is simply asking yourself or others problems and designing solutions to them. I love finishing a page or component, but I love even more the incremental steps towards that finished product, when you begin to realize what it will look like and how beautiful it will be.
-        </AnimatedParagraph>
+          <AnimatedParagraph delay={0.2}>
+            I feel the most focused in my life when solving a problem and I feel like coding is simply asking yourself or others problems and designing solutions to them. I love finishing a page or component, but I love even more the incremental steps towards that finished product, when you begin to realize what it will look like and how beautiful it will be.
+          </AnimatedParagraph>
 
-        <AnimatedParagraph delay={0.4}>
-          So, you will get someone who loves asking questions, solving problems, is almost never satisfied and always striving for something better, a fast learner (0-30,000 lines of self-taught code in four months), and is passionate about delighting users.
-        </AnimatedParagraph>
+          <AnimatedParagraph delay={0.4}>
+            So, you will get someone who loves asking questions, solving problems, is almost never satisfied and always striving for something better, a fast learner (0-30,000 lines of self-taught code in four months), and is passionate about delighting users.
+          </AnimatedParagraph>
 
-        <AnimatedParagraph delay={0.6}>
-          You will get something that will integrate effortlessly with your team, and will never waste an opportunity to ask questions and learn. The growth I've experienced since September and my coding abilities has been a blast, and I know with the right team and mission around me, I'll continue to rapidly progress.
-        </AnimatedParagraph>
+          <AnimatedParagraph delay={0.6}>
+            You will get something that will integrate effortlessly with your team, and will never waste an opportunity to ask questions and learn. The growth I've experienced since September and my coding abilities has been a blast, and I know with the right team and mission around me, I'll continue to rapidly progress.
+          </AnimatedParagraph>
 
-        <AnimatedParagraph delay={0.8}>
-          I love building. Therefore, if the job requires 12 hours of building a day, wonderful. If it only requires 8-10, no problem, I'll spend an extra 2-4 hours a day building projects of my own, and improving my skills. This is what I do for fun (when not playing Civilization), so I expect to continue growing quickly while delivering immediate results for your company.
-        </AnimatedParagraph>
-      </div>
+          <AnimatedParagraph delay={0.8}>
+            I love building. Therefore, if the job requires 12 hours of building a day, wonderful. If it only requires 8-10, no problem, I'll spend an extra 2-4 hours a day building projects of my own, and improving my skills. This is what I do for fun (when not playing Civilization), so I expect to continue growing quickly while delivering immediate results for your company.
+          </AnimatedParagraph>
+        </div>
+      </motion.div>
     </div>
 
     {/* Right Column */}
@@ -449,6 +470,13 @@ const Home: FC = () => {
         What I Do Best in UX
       </motion.h2>
 
+      <motion.div 
+        className="p-6 bg-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] rounded-lg"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+      >
       <div className="space-y-4">
         <AnimatedParagraph>
           As you'll see in my videos if you watch them, I analyze everything on a page deeply. Why each button is where it is, why I received this notification, how they got me to opt into notifications, how to increase conversions by changing language, moving buttons, changing colors, or adding animations.
@@ -474,6 +502,7 @@ const Home: FC = () => {
           I am analytical, empathetic, a deep thinker, and a passionate builder. I believe these are excellent traits for a UX designer.
         </AnimatedParagraph>
       </div>
+      </motion.div>
     </div>
   </div>
 </section>
@@ -520,7 +549,7 @@ const Home: FC = () => {
 
   {/* Final Two-Column Section */}
   <motion.div 
-    className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12"
+    className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 bg-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] rounded-lg"
     initial={{ opacity: 0, y: 50 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, margin: "-100px" }}
@@ -531,7 +560,7 @@ const Home: FC = () => {
     }}
   >
     {/* Left Column */}
-    <div className="text-center">
+    <div className="text-center p-6 ">
       <h2 className="text-2xl md:text-3xl font-bold mb-6">
         What I'm Looking for in my Next Role
       </h2>
@@ -556,13 +585,13 @@ const Home: FC = () => {
     </div>
 
     {/* Right Column */}
-    <div className="text-center">
+    <div className="text-center p-6">
       <h2 className="text-2xl md:text-3xl font-bold mb-6">
         What I Hope to Improve
       </h2>
       
-      <p className="text-lg">
-        This is something I intend to begin studying on my own, as I have to some extent, but in my next role, I hope to ask my co-workers that excel in graphic design, typography, colors, and so on why they made every decision they did. I'm not naturally artistic, so the visual design side of the craft is something I'm still developing. Though I'm learning on my own, I really hope to learn directly from someone excellent in this aspect of product design.
+      <p className="text-lg p-4">
+        This is something I intend to begin studying on my own, as I have to some extent, but in my next role, I hope to ask my co-workers that excel in graphic design, typography, colors, and so on why they made every decision they did. I'm very creative, though not naturally artistic, so the visual design side of the craft is something I'm still developing. Though I'm learning on my own, I really hope to learn directly from someone excellent in this aspect of product design.
       </p>
     </div>
   </motion.div>
@@ -584,7 +613,7 @@ const Home: FC = () => {
     <div className="space-y-2">
       <h2 className="text-3xl md:text-4xl font-bold">Want to Chat? Reach out to me at:</h2>
       <a 
-        href="mailto:jpryor812@gmail.com" 
+        href="mailto:jpryor812@gmail.com?subject=You're%20Hired!" 
         className="text-2xl md:text-3xl font-bold underline hover:underline inline-block"
       >
         jpryor812@gmail.com
