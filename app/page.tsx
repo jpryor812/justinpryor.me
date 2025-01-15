@@ -8,6 +8,7 @@ import './globals.css';
 import Header from './components/Header';
 import ProjectCard from './components/ProjectCard';
 import { projects } from './constants/projects';
+import SmallProjectCard from './components/SmallProjectCard';
 
 const Home: FC = () => {
   return (
@@ -79,100 +80,17 @@ const Home: FC = () => {
   </motion.h2>
 </section>
 
-      {/* Projects section - new interactive cards */}
-      {projects.map((project, index) => (
-        <ProjectCard
-          key={project.title}
-          {...project}
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            duration: 0.7,
-            delay: 1.8 + (index * 0.2), 
-            ease: [0.215, 0.610, 0.355, 1.000]
-          }}
-        />
-      ))}
+{/* Full width projects */}
+{projects.filter(project => project.type === 'full').map((project, index) => (
+  <ProjectCard key={project.title} {...project} />
+))}
 
+{/* Grid section for all small projects */}
 <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-    {/* UserJourney.blog container */}
-    <motion.div 
-      className="relative w-full aspect-[6/5]"
-      initial={{ opacity: 0, y: 125 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-100px" }}
-      transition={{
-        duration: 0.9,
-        type: "spring",
-        bounce: 0.6
-      }}
-    >
-      <div className="bg-purple-100 rounded-lg absolute inset-0"></div>
-      
-      <div className="absolute inset-0 flex items-center justify-center p-6">
-        <img 
-          src="/UJ2.png"
-          alt="UserJourneys.blog"
-          className="w-auto h-full max-h-full object-contain"
-        />
-      </div>
-      <div className="absolute inset-0 flex items-center justify-center">
-        <h2 
-          className="text-3xl sm:text-4xl font-bold"
-          style={{
-            color: 'black',
-            textShadow: `
-              -2px -2px 0 #fff,
-               2px -2px 0 #fff,
-              -2px  2px 0 #fff,
-               2px  2px 0 #fff
-            `
-          }}
-        >
-          User Journeys
-        </h2>
-      </div>
-    </motion.div>
-    {/* allthingsvc.blog container */}
-    <motion.div 
-      className="relative w-full aspect-[6/5]"
-      initial={{ opacity: 0, y: 125 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-100px" }}
-      transition={{
-        duration: 0.9,
-        type: "spring",
-        bounce: 0.6,
-        delay: 0.4
-      }}
-    >
-      <div className="bg-orange-50 rounded-lg absolute inset-0"></div>
-      
-      <div className="absolute inset-0 flex items-center justify-center p-6">
-        <img 
-          src="/ATVC_homepage.png"
-          alt="allthingsvc.blog"
-          className="w-auto h-full max-h-full object-contain"
-        />
-      </div>
-      <div className="absolute inset-0 flex items-center justify-center">
-        <h2 
-          className="text-3xl sm:text-4xl font-bold"
-          style={{
-            color: 'black',
-            textShadow: `
-              -2px -2px 0 #fff,
-               2px -2px 0 #fff,
-              -2px  2px 0 #fff,
-               2px  2px 0 #fff
-            `
-          }}
-        >
-          allthingsvc.blog
-        </h2>
-      </div>
-    </motion.div>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+    {projects.filter(project => project.type === 'small').map((project, index) => (
+      <SmallProjectCard key={project.title} {...project} />
+    ))}
   </div>
 </section>
 

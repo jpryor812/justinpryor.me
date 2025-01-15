@@ -123,6 +123,8 @@ const ProjectCard = ({
                 />
                 <motion.a
                     href={image.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-200"
                 >
                     <span className="text-white text-sm font-medium">
