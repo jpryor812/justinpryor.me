@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const ImageCarousel = () => {
   // Sample image data - replace with your actual images
@@ -22,6 +23,7 @@ const ImageCarousel = () => {
     "VSCode-logo.png",
     "Replit-logo.png",
     "Vercel-logo.png",
+    "eslint-logo.png",
   ];
 
   // Duplicate the images array to create the infinite effect
@@ -56,7 +58,7 @@ const ImageCarousel = () => {
             key={index}
             className="flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden"
           >
-            <img
+            <Image
               src={src}
               alt={`Carousel item ${index + 1}`}
               className="w-full h-full object-cover"

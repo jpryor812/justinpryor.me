@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 interface SmallProjectCardProps {
   title: string;
@@ -58,7 +59,7 @@ const SmallProjectCard = ({
       
       {/* Logo/Image */}
       <div className="absolute inset-0 flex items-center justify-center p-6">
-        <img 
+        <Image 
           src={logoSrc}
           alt={title}
           className="w-auto h-full max-h-full object-contain" 
@@ -150,7 +151,7 @@ const SmallProjectCard = ({
                 bounce: 0.2
               }}
             >
-              <img
+              <Image
                 src={image.url}
                 alt={image.alt}
                 className="w-full h-full object-cover bg-blue-300 rounded-xl p-2 shadow-xl"

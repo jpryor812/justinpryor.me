@@ -39,7 +39,7 @@ const Home: FC = () => {
       }}
     >
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold">
-        I'm Justin, a founder, builder, and fanatic of excellent user experiences.
+        I&apos;m Justin, a founder, builder, and fanatic of excellent user experiences.
       </h1>
     </motion.div>
 
@@ -88,19 +88,19 @@ const Home: FC = () => {
       ease: [0.215, 0.610, 0.355, 1.000]
     }}
   >
-    Some Projects I've Worked On:
+    Some Projects I&apos;ve Worked On:
   </motion.h2>
 </section>
 
 {/* Full width projects */}
-{projects.filter(project => project.type === 'full').map((project, index) => (
+{projects.filter(project => project.type === 'full').map((project) => (
   <ProjectCard key={project.title} {...project} />
 ))}
 
 {/* Grid section for all small projects */}
 <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
-    {projects.filter(project => project.type === 'small').map((project, index) => (
+    {projects.filter(project => project.type === 'small').map((project) => (
       <SmallProjectCard key={project.title} {...project} />
     ))}
   </div>
@@ -119,7 +119,7 @@ const Home: FC = () => {
       delay: 0.4
     }}
   >
-    Languages, Frameworks, and Tools I'm Building With:
+    Languages, Frameworks, and Tools I&apos;m Building With:
   </motion.h2>
 </section>
 
@@ -138,7 +138,7 @@ const Home: FC = () => {
       delay: 0.4
     }}
   >
-    Ideas I'm Actively Exploring:
+    Ideas I&apos;m Actively Exploring:
   </motion.h2>
 </section>
 
@@ -160,7 +160,7 @@ const Home: FC = () => {
       <div className="bg-green-100 rounded-lg absolute inset-0"></div>
       
       <div className="absolute inset-0 flex items-center justify-center p-6">
-        <img 
+        <Image 
           src="/patreon.png"
           alt="SuuM"
           className="w-auto h-full max-h-full object-contain"
@@ -189,7 +189,7 @@ const Home: FC = () => {
         transition={{ duration: 0.3 }}
       >
         <p className="text-white text-lg text-center leading-relaxed">
-        Suum is a project I’m in the early stages of, which is a stablecoin-based Patreon alternative. Patreon has high fees, including payment transaction fees, which, for a small $5-a-month creator, essentially doubles the platform fee from an already high 8% to an outrageous 16%. Stablecoins keep that at 8%, but I also intend to lower the platform fees for early creators and increase prices as they scale to accelerate the platform early on. I’m passively building the MVP while gauging creator interest before going all in. 
+        Suum is a project I'm in the early stages of, which is a stablecoin-based Patreon alternative. Patreon has high fees, including payment transaction fees, which, for a small $5-a-month creator, essentially doubles the platform fee from an already high 8% to an outrageous 16%. Stablecoins keep that at 8%, but I also intend to lower the platform fees for early creators and increase prices as they scale to accelerate the platform early on. I’m passively building the MVP while gauging creator interest before going all in. 
         </p>
       </motion.div>
     </motion.div>
@@ -210,7 +210,7 @@ const Home: FC = () => {
       <div className="bg-green-100 rounded-lg absolute inset-0"></div>
       
       <div className="absolute inset-0 flex items-center justify-center p-6">
-        <img 
+        <Image 
           src="/video-game-stock.png"
           alt="Video Game Footage to Video AI Tool"
           className="w-auto h-full max-h-full object-contain"
@@ -239,7 +239,7 @@ const Home: FC = () => {
         transition={{ duration: 0.3 }}
       >
         <p className="text-white text-lg text-center leading-relaxed">
-        This idea came to me one day when I was playing Civilization after OpenAI's Sora was having a big publicity day. It's a pretty wacky idea, but essentially, I hope in a few years, it will be possible to build a tool that can record your video game sessions in games like Civilization, Factorio, Starcraft, or other turn-based strategy games and turn them into an AI-generated film with a storyline. I have more thoughts but no space here, so if you're curious, <a href="https://docs.google.com/document/d/1li97BtqzyEv1ErahlvHstSGgNE7KUmrKDUAxrA3bx6I/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 underline">I wrote a one-pager</a>.
+        This idea came to me one day when I was playing Civilization after OpenAI&apos;s Sora was having a big publicity day. It&apos;s a pretty wacky idea, but essentially, I hope in a few years, it will be possible to build a tool that can record your video game sessions in games like Civilization, Factorio, Starcraft, or other turn-based strategy games and turn them into an AI-generated film with a storyline. I have more thoughts but no space here, so if you&apos;re curious, <a href="https://docs.google.com/document/d/1li97BtqzyEv1ErahlvHstSGgNE7KUmrKDUAxrA3bx6I/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 underline">I wrote a one-pager</a>.
         </p>
       </motion.div>
     </motion.div>
@@ -525,7 +525,7 @@ const Home: FC = () => {
         rel="noopener noreferrer" 
         className="hover:opacity-80 transition-opacity"
       >
-        <img src="/mdi_github.png" alt="GitHub" className="w-10 h-10" />
+        <Image src="/mdi_github.png" alt="GitHub" className="w-10 h-10" />
       </a>
       <a 
         href="https://www.youtube.com/channel/UC_bS1W9O8jpTE6gG9wss1rg" 
@@ -533,7 +533,7 @@ const Home: FC = () => {
         rel="noopener noreferrer" 
         className="hover:opacity-80 transition-opacity"
       >
-        <img src="/logos_youtube-icon.png" alt="YouTube" className="w-14 h-10" />
+        <Image src="/logos_youtube-icon.png" alt="YouTube" className="w-14 h-10" />
       </a>
       <a 
         href="https://www.linkedin.com/in/justin-pryor-959352150/" 
@@ -541,7 +541,7 @@ const Home: FC = () => {
         rel="noopener noreferrer" 
         className="hover:opacity-80 transition-opacity"
       >
-        <img src="/devicon_linkedin.png" alt="LinkedIn" className="w-10 h-10" />
+        <Image src="/devicon_linkedin.png" alt="LinkedIn" className="w-10 h-10" />
       </a>
       <a 
         href="https://x.com/Justin_Pryor_" 
@@ -549,7 +549,7 @@ const Home: FC = () => {
         rel="noopener noreferrer" 
         className="hover:opacity-80 transition-opacity"
       >
-        <img src="/prime_twitter.png" alt="X (Twitter)" className="w-10 h-10" />
+        <Image src="/prime_twitter.png" alt="X (Twitter)" className="w-10 h-10" />
       </a>
     </div>
 

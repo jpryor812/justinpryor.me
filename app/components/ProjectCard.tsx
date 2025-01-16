@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 interface ProjectCardProps {
   title: string;
@@ -12,9 +13,6 @@ interface ProjectCardProps {
   }>;
   logoSrc: string;
   className?: string;
-  initial?: any;
-  animate?: any;
-  transition?: any;
 }
 
 const ProjectCard = ({ 
@@ -23,9 +21,6 @@ const ProjectCard = ({
   images,
   logoSrc,
   className = '',
-  initial,
-  animate,
-  transition
 }: ProjectCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -48,7 +43,7 @@ const ProjectCard = ({
         
         {/* Logo image positioned over the backdrop */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <img 
+          <Image 
             src={logoSrc}
             alt={title}
             className="w-auto h-full max-h-full object-contain" 
