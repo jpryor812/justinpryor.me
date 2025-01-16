@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { FC } from "react";
 
 const AnimatedParagraph: FC<{ children: React.ReactNode; delay?: number }> = ({ children, delay = 0 }) => (
