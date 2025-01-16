@@ -18,11 +18,11 @@ const ImageCarousel = () => {
     "/firebase_logo.png",
     "/FramerMotion-logo.png",
     "/jira-logo.png",
-    "/Notion-logo.png",
-    "/Monday-logo.png",
+    "/notion-logo.png",
+    "/monday-logo.png",
     "/VSCode-logo.png",
     "/Replit-logo.png",
-    "/Vercel-logo.png",
+    "/vercel-logo.png",
     "/eslint-logo.png",
   ];
 
