@@ -3,8 +3,14 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import '../globals.css';
 import { Rubik_Doodle_Shadow } from 'next/font/google';
+import { Racing_Sans_One } from 'next/font/google';
 
 const rubikDoodle = Rubik_Doodle_Shadow({
+  subsets: ['latin'],
+  weight: ['400'], // Use the available weights
+});
+
+const racingSansOne = Racing_Sans_One({
   subsets: ['latin'],
   weight: ['400'], // Use the available weights
 });
@@ -45,12 +51,21 @@ const Header = () => {
 
   return (
     <>
-      <header className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8 relative">
+      <motion.header
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{
+          duration: 1,
+          delay: 2.6,
+          ease: "easeOut"
+        }}
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8 relative"
+      >
         <nav className="flex justify-between items-center">
           {/* Left side - Logo */}
           <div>
-          <a href="/" className={`text-xl font-500 ${rubikDoodle.className}`}>
-          Justin Pryor
+            <a href="/" className={`text-2xl font-500 ${racingSansOne.className}`}>
+              Justin Pryor
             </a>
           </div>
 
@@ -134,7 +149,7 @@ const Header = () => {
             </motion.div>
           )}
         </AnimatePresence>
-      </header>
+      </motion.header>
       {isOpen && <div className="md:hidden h-screen" />}
     </>
   );

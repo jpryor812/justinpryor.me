@@ -58,7 +58,7 @@ const ProjectCard = ({
         {/* Title overlay */}
         <div className="absolute inset-0 flex items-center justify-center">
           <h2 
-            className="text-4xl sm:text-5xl font-bold max-w-[50%] text-center"
+            className="text-4xl sm:text-5xl font-bold max-w-[75%] text-center"
             style={{
               color: 'black',
               textShadow: `-2px -2px 0 #fff,
@@ -118,7 +118,7 @@ const ProjectCard = ({
                 <img
                     src={image.url}
                     alt={image.alt}
-                    className="w-72 h-full object-cover bg-pink-200 rounded-xl p-2 shadow-xl"
+                    className="w-72 h-full object-cover bg-green-200 rounded-xl p-2 shadow-xl"
                     style={{ border: 'none' }}
                 />
                 <motion.a
@@ -136,8 +136,8 @@ const ProjectCard = ({
           </div>
 
             {/* Description */}
-            <div className="w-1/2 mx-auto text-center bg-white border-8 border-pink-200 rounded-xl p-6 shadow-xl">
-            <p className="text-gray-600 text-sm">{description}</p>
+            <div className="w-3/4 mx-auto text-center bg-white border-8 border-pink-200 rounded-xl p-6 shadow-xl">
+            <p className="text-gray-600 text-md">{description}</p>
             </div>
         </motion.div>
       </motion.div>

@@ -153,7 +153,7 @@ const SmallProjectCard = ({
               <img
                 src={image.url}
                 alt={image.alt}
-                className="w-full h-full object-cover bg-white rounded-xl p-2 shadow-xl"
+                className="w-full h-full object-cover bg-blue-300 rounded-xl p-2 shadow-xl"
               />
               <motion.a
                 href={image.link}
@@ -168,7 +168,7 @@ const SmallProjectCard = ({
         </div>
 
         {/* Description */}
-        <div className={`w-full mx-auto text-center bg-white rounded-xl shadow-xl ${
+        <div className={`w-full mx-auto text-center bg-white border-8 border-yellow-200 rounded-xl shadow-xl ${
           isWideScreen ? 'p-6' : 'p-4'
         }`}>
           <p className={`text-gray-600 ${
