@@ -46,6 +46,8 @@ const ProjectCard = ({
           <Image 
             src={logoSrc}
             alt={title}
+            width={500}
+            height={300}
             className="w-auto h-full max-h-full object-contain" 
           />
         </div>
@@ -73,7 +75,7 @@ const ProjectCard = ({
             { opacity: 1, y: 0, scale: 1 } : 
             { opacity: 0, y: 20, scale: 0.95 }
           }
-          transition={{ duration: 0.2 }}
+          transition={{ duration: 0.4 }}
           className="absolute left-0 w-full -top-1/2 transform translate-y-full z-50"
         >
         {/* Image Gallery */}
@@ -113,6 +115,8 @@ const ProjectCard = ({
                 <Image
                     src={image.url}
                     alt={image.alt}
+                    width={300}
+                    height={200}
                     className="w-72 h-full object-cover bg-green-200 rounded-xl p-2 shadow-xl"
                     style={{ border: 'none' }}
                 />

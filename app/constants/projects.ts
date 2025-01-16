@@ -2,7 +2,7 @@ export const projects = [
         {
           type: 'full',
           title: 'NUFRIENDS',
-          description: 'nufriends is an AI-assisted friend-matching and messaging mobile app geared toward people with social anxiety who struggle with starting and continuing conversations. After a brief questionnaire, I used OpenAI’s API to match users based on compatibility, age, and time since their last match. Then, users can use their AI companion at any time to help with conversations as the API reads current messages and the original onboarding questionnaire. It’s an anonymous platform designed through avatars with skins and accessories that users can earn by the more friends they make and message. I’m currently building the waitlist and waiting until there is enough user demand to launch, as any social app needs. ',
+          description: 'nufriends is an AI-assisted friend-matching and messaging mobile app built with React Native, geared toward people with social anxiety who struggle with starting and continuing conversations. After a brief questionnaire, I used OpenAI’s API to match users based on compatibility, age, and time since their last match. Then, users can use their AI companion at any time to help with conversations as the API reads current messages and the original onboarding questionnaire. It’s an anonymous platform designed through avatars with skins and accessories that users can earn by the more friends they make and message. I’m currently building the waitlist and waiting until there is enough user demand to launch, as any social app needs. ',
           logoSrc: '/nufriends_logo_final.png',
           images: [
             {
@@ -29,7 +29,7 @@ export const projects = [
             type: 'small',
             bgColor: 'bg-purple-100',
             title: 'User Journeys',
-            description: 'User Journeys is a YouTube channel/blog where I analyze the discovery, onboarding, and in-app experience of top-rated mobile apps from a UX perspective. I analyze every detail, and the videos typically last 45 minutes or more. When finished, I email the product teams at these companies for answers to my outstanding questions. I do this to study and learn from the best, and eventually, I hope to review user-submitted apps.',
+            description: 'User Journeys is a YouTube channel/blog where I analyze the discovery, onboarding, and in-app experience of top-rated mobile apps from a UX and growth perspective. I analyze every detail, and the videos typically last 45 minutes or more. When finished, I email the product teams at these companies for answers to my outstanding questions. I do this to study and learn from the best, and eventually, I hope to review fan-submitted apps.',
             logoSrc: '/UJ2.png',
             images: [
               {

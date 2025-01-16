@@ -5,25 +5,25 @@ import Image from 'next/image';
 const ImageCarousel = () => {
   // Sample image data - replace with your actual images
   const images = [
-    "CSS-logo.png",
-    "HTML-logo.png",
-    "JS-logo.png",
-    "React-logo.png",
-    "Tailwind-logo.png",
-    "TS-logo.png",
-    "Excel-logo.png",
-    "Figma-logo.png",
-    "GitHub-logo.png",
-    "NextJS-logo.png",
-    "firebase_logo.png",
-    "FramerMotion-logo.png",
-    "jira-logo.png",
-    "Notion-logo.png",
-    "Monday-logo.png",
-    "VSCode-logo.png",
-    "Replit-logo.png",
-    "Vercel-logo.png",
-    "eslint-logo.png",
+    "/CSS-logo.png",
+    "/HTML-logo.png",
+    "/JS-logo.png",
+    "/React-logo.png",
+    "/Tailwind-logo.png",
+    "/TS-logo.png",
+    "/Excel-logo.png",
+    "/Figma-logo.png",
+    "/GitHub-logo.png",
+    "/NextJS-logo.png",
+    "/firebase_logo.png",
+    "/FramerMotion-logo.png",
+    "/jira-logo.png",
+    "/Notion-logo.png",
+    "/Monday-logo.png",
+    "/VSCode-logo.png",
+    "/Replit-logo.png",
+    "/Vercel-logo.png",
+    "/eslint-logo.png",
   ];
 
   // Duplicate the images array to create the infinite effect
@@ -62,6 +62,8 @@ const ImageCarousel = () => {
               src={src}
               alt={`Carousel item ${index + 1}`}
               className="w-full h-full object-cover"
+              width={300}
+              height={200}
             />
           </div>
         ))}

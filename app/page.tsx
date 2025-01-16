@@ -164,6 +164,8 @@ const Home: FC = () => {
           src="/patreon.png"
           alt="SuuM"
           className="w-auto h-full max-h-full object-contain"
+          width={300}
+          height={200}
         />
       </div>
       <div className="absolute inset-0 flex items-center justify-center">
@@ -214,6 +216,8 @@ const Home: FC = () => {
           src="/video-game-stock.png"
           alt="Video Game Footage to Video AI Tool"
           className="w-auto h-full max-h-full object-contain"
+          width={300}
+          height={200}
         />
       </div>
       <div className="absolute inset-0 flex items-center justify-center">
@@ -267,7 +271,7 @@ const Home: FC = () => {
     </AnimatedParagraph>
 
     <AnimatedParagraph delay={0.4}>
-    I&apos;ve never really been a great artist, nor taken any engineering courses in college (my love for tech was discovered the second semester of my senior year, unfortunately), so when I started building nufriends, it was the first time I actually put thoughts in my head into something real in the world, and I was thrilled.     </AnimatedParagraph>
+    I&apos;ve never really been a great artist, nor taken any engineering courses in college (my love for tech was discovered the second semester of my senior year, unfortunately), so when I started building nufriends, it was the first time I actually put thoughts in my head into a usable product, and I was thrilled.     </AnimatedParagraph>
 
     <AnimatedParagraph delay={0.6}>
     It was a genuinely emotional experience when I started playing around with Replit Agent and Claude Sonnet 3.5 and realized that if I know what I want, I can build it. I still remember where I was sitting in the Hunter&apos;s Point Public Library; I was so excited I teared up. Since I started building in September 2024, I&apos;ve pushed over 35,000 lines of code across a full-stack mobile app, three websites (including this one), and a few burgeoning projects.    </AnimatedParagraph>
@@ -388,7 +392,7 @@ const Home: FC = () => {
         As you&apos;ll see in my videos, I analyze everything on a page deeply—why each button is where it is, why I received this notification, how they got me to opt into notifications, how to increase conversions by changing language, moving buttons, changing colors, or adding animations. I truly think about everything, and I will constantly ask my coworkers and, if possible, our users what they think about every detail and strongly consider all feedback to make a decision.        </AnimatedParagraph>
 
         <AnimatedParagraph delay={0.2}>
-        I have talked to several users in building nufriends, and have read so many app reviews, including some of my own (which include 40+ minute videos/rants), so I know what to consider, and I know what to look for. Nothing I do is just to get something done; every change I make is with the user in mind. Every color, button, animation, text, and whatever else on a page is a considered decision.        </AnimatedParagraph>
+        I have talked to several users in building nufriends, and have read so many app reviews, including producing some of my own (which include 40+ minute videos/rants), so I know what to consider, and I know what to look for. Nothing I do is just to get something done; every change I make is with the user in mind. Every color, button, animation, text, and whatever else on a page is a considered decision.        </AnimatedParagraph>
 
         <AnimatedParagraph delay={0.4}>
         I take nothing personally and always look to improve, so I welcome as much feedback and/or criticism as I can get. I love to learn, and feedback in this function is the best way by far.        </AnimatedParagraph>
@@ -525,7 +529,7 @@ const Home: FC = () => {
         rel="noopener noreferrer" 
         className="hover:opacity-80 transition-opacity"
       >
-        <Image src="/mdi_github.png" alt="GitHub" className="w-10 h-10" />
+        <Image src="/mdi_github.png" alt="GitHub" className="w-10 h-10" width={300} height={200} />
       </a>
       <a 
         href="https://www.youtube.com/channel/UC_bS1W9O8jpTE6gG9wss1rg" 
@@ -533,7 +537,7 @@ const Home: FC = () => {
         rel="noopener noreferrer" 
         className="hover:opacity-80 transition-opacity"
       >
-        <Image src="/logos_youtube-icon.png" alt="YouTube" className="w-14 h-10" />
+        <Image src="/logos_youtube-icon.png" alt="YouTube" className="w-14 h-10" width={300} height={200} />
       </a>
       <a 
         href="https://www.linkedin.com/in/justin-pryor-959352150/" 
@@ -541,7 +545,7 @@ const Home: FC = () => {
         rel="noopener noreferrer" 
         className="hover:opacity-80 transition-opacity"
       >
-        <Image src="/devicon_linkedin.png" alt="LinkedIn" className="w-10 h-10" />
+        <Image src="/devicon_linkedin.png" alt="LinkedIn" className="w-10 h-10" width={300} height={200} />
       </a>
       <a 
         href="https://x.com/Justin_Pryor_" 
@@ -549,13 +553,13 @@ const Home: FC = () => {
         rel="noopener noreferrer" 
         className="hover:opacity-80 transition-opacity"
       >
-        <Image src="/prime_twitter.png" alt="X (Twitter)" className="w-10 h-10" />
+        <Image src="/prime_twitter.png" alt="X (Twitter)" className="w-10 h-10" width={300} height={200} />
       </a>
     </div>
 
     {/* Built With Section */}
     <div className="flex flex-col items-center space-y-4">
-  <p className="text-xl">This site was build with Next.js, React, Framer Motion, and TailwindCSS.</p>
+  <p className="text-xl">This site was build with Next.js, React, TypeScript, Framer Motion, and TailwindCSS.</p>
   <a 
     href="https://github.com/jpryor812/justinpryor.me" 
     className="text-xl underline hover:opacity-80 transition-opacity"
