@@ -12,6 +12,7 @@ import SmallProjectCard from './components/SmallProjectCard';
 import ImageCarousel from './components/ImageCarousel';
 import InitialLoadAnimation from './components/InitialLoadAnimation';
 import EmailMeButton from './components/EmailMeButton';
+import LiteYouTubeEmbed from './components/LiteYouTubeEmbed';
 
 const Home: FC = () => {
   const [showAnimation, setShowAnimation] = useState(true);
@@ -432,28 +433,10 @@ const Home: FC = () => {
 </section>
 
 <section className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-4 pb-6">
-<motion.div 
-    className="mt-16"
-    initial={{ opacity: 0, y: 50 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true, margin: "-100px" }}
-    transition={{
-      duration: 0.7,
-      type: "spring",
-      bounce: 0.4
-    }}
-  >
-    {/* Responsive video container */}
-    <div className="relative w-full aspect-video max-w-4xl mx-auto overflow-hidden rounded-lg shadow-lg">
-      <iframe 
-        className="absolute inset-0 w-full h-full"
-        src="https://www.youtube.com/embed/By1n6Enw9_c?si=RbR3WHdMNTn7LHNf" 
-        title="YouTube video player" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        allowFullScreen
-      />
-    </div>
-  </motion.div>
+  <LiteYouTubeEmbed 
+    videoId="By1n6Enw9_c"
+    title="YouTube video player"
+  />
 </section>
 
 <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
