@@ -64,6 +64,7 @@ const SmallProjectCard = ({
           alt={title}
           width={300}
           height={200}
+          loading="lazy"
           className="w-auto h-full max-h-full object-contain" 
         />
       </div>

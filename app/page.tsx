@@ -72,6 +72,7 @@ const Home: FC = () => {
   width={200} // Tailored for w-56 (14rem)
   height={200} // Tailored for h-56 (14rem)
   className="relative z-10 rounded-lg object-cover"
+  loading="lazy"
 />
       </div>
     </motion.div>
