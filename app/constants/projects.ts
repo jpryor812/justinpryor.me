@@ -2,7 +2,7 @@ export const projects = [
         {
           type: 'full',
           title: 'NUFRIENDS',
-          description: 'nufriends is an AI-assisted friend-matching and messaging mobile app built with React Native, geared toward people with social anxiety who struggle with starting and continuing conversations. After a brief questionnaire, I used OpenAI’s API to match users based on compatibility, age, and time since their last match. Then, users can use their AI companion at any time to help with conversations as the API reads current messages and the original onboarding questionnaire. It’s an anonymous platform designed through avatars with skins and accessories that users can earn by the more friends they make and message. I’m currently building the waitlist and waiting until there is enough user demand to launch, as any social app needs. ',
+          description: 'nufriends is an AI-assisted friend-matching and messaging mobile app built with React Native, geared toward people with social anxiety who struggle with starting and continuing conversations. After a brief questionnaire, I used OpenAI’s API to match users based on compatibility, age, and time since their last match (all data saved in Firebase). Then, users can use their AI companion at any time to help with conversations as the API reads current messages and the original onboarding questionnaire. It’s an anonymous platform designed through avatars with skins and accessories that users can earn by the more friends they make and message. I’m currently building the waitlist and waiting until there is enough user demand to launch, as any social app needs. ',
           logoSrc: '/nufriends_logo_final.png',
           images: [
             {
