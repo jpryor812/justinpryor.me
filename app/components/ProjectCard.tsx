@@ -27,8 +27,8 @@ const ProjectCard = ({
   return (
     <section className={`max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 ${className}`}>
       <motion.div 
-        className="relative w-full aspect-[3/1]"
-        initial={{ opacity: 0, y: 50 }}
+    className="relative w-full aspect-[3/1]" 
+    initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
           duration: 0.7,
@@ -76,7 +76,7 @@ const ProjectCard = ({
             { opacity: 0, y: 20, scale: 0.95 }
           }
           transition={{ duration: 0.4 }}
-          className="absolute left-0 w-full -top-1/2 transform translate-y-full z-50"
+          className="absolute left-0 w-full -top-1/4 transform translate-y-full z-50"
         >
         {/* Image Gallery */}
             <div className="flex justify-between items-center mb-6">
@@ -135,7 +135,7 @@ const ProjectCard = ({
           </div>
 
             {/* Description */}
-            <div className="w-3/4 mx-auto text-center bg-white border-8 border-pink-200 rounded-xl p-6 shadow-xl">
+            <div className="w-5/6 mx-auto text-center bg-white border-8 border-pink-200 rounded-xl p-4 shadow-xl">
             <p className="text-gray-600 sm:text-sm md:text-md">{description}</p>
             </div>
         </motion.div>

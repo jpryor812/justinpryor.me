@@ -176,7 +176,7 @@ const SmallProjectCard = ({
 
         {/* Description */}
         <div className={`w-full mx-auto text-center bg-white border-8 border-yellow-200 rounded-xl shadow-xl ${
-          isWideScreen ? 'p-6' : 'p-4'
+          isWideScreen ? 'p-4' : 'p-4'
         }`}>
           <p className={`text-gray-600 ${
             isWideScreen ? 'text-sm' : 'text-xs'

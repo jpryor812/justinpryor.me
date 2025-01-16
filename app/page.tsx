@@ -234,7 +234,7 @@ const Home: FC = () => {
             `
           }}
         >
-          Video Game Footage to Film AI Tool
+          Video Game-Footage-to-Film AI Tool
         </h2>
       </div>
       <motion.div 
