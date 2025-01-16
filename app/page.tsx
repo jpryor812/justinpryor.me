@@ -11,6 +11,7 @@ import { projects } from './constants/projects';
 import SmallProjectCard from './components/SmallProjectCard';
 import ImageCarousel from './components/ImageCarousel';
 import InitialLoadAnimation from './components/InitialLoadAnimation';
+import EmailMeButton from './components/EmailMeButton';
 
 const Home: FC = () => {
   const [showAnimation, setShowAnimation] = useState(true);
@@ -287,7 +288,13 @@ const Home: FC = () => {
   </div>
 </section>
 
-<section className="max-w-4xl mx-auto px-2 sm:px-4 lg:px-6 pt-24">
+<div className="flex justify-center my-4 py-8"> 
+  <EmailMeButton 
+    size="lg"
+  />
+</div>
+
+<section className="max-w-4xl mx-auto px-2 sm:px-4 lg:px-6">
   <motion.h2
     className="text-3xl md:text-4xl font-bold mb-8 text-center"
     initial={{ opacity: 0, y: 20 }}
@@ -567,14 +574,6 @@ const Home: FC = () => {
     rel="noopener noreferrer"
   >
     Click here to view the codebase for this site.
-  </a>
-  <a 
-    href="https://www.figma.com/proto/UVNmoluwelkp9ivHcjSu9K/justinpryor.me?node-id=15-96&t=aP4aHgh2FpWJ8dwH-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=15%3A96" 
-    className="text-l underline hover:opacity-80 transition-opacity"
-    target="_blank" 
-    rel="noopener noreferrer"
-  >
-    Click here to view the Figma file for this site.
   </a>
 </div>
   </motion.div>
