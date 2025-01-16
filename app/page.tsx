@@ -569,7 +569,7 @@ const Home: FC = () => {
     Click here to view the codebase for this site.
   </a>
   <a 
-    href="https://github.com/YourUsername/YourRepo" 
+    href="https://www.figma.com/proto/UVNmoluwelkp9ivHcjSu9K/justinpryor.me?node-id=15-96&t=aP4aHgh2FpWJ8dwH-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=15%3A96" 
     className="text-l underline hover:opacity-80 transition-opacity"
     target="_blank" 
     rel="noopener noreferrer"
