@@ -136,7 +136,7 @@ const ProjectCard = ({
 
             {/* Description */}
             <div className="w-3/4 mx-auto text-center bg-white border-8 border-pink-200 rounded-xl p-6 shadow-xl">
-            <p className="text-gray-600 text-md">{description}</p>
+            <p className="text-gray-600 sm:text-sm md:text-md">{description}</p>
             </div>
         </motion.div>
       </motion.div>
