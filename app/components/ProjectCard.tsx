@@ -110,7 +110,7 @@ const ProjectCard = ({
                     boxShadow: 'none'
                 }}
                 >
-                <img
+                <Image
                     src={image.url}
                     alt={image.alt}
                     className="w-72 h-full object-cover bg-green-200 rounded-xl p-2 shadow-xl"

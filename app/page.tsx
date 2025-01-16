@@ -189,7 +189,7 @@ const Home: FC = () => {
         transition={{ duration: 0.3 }}
       >
         <p className="text-white text-lg text-center leading-relaxed">
-        Suum is a project I'm in the early stages of, which is a stablecoin-based Patreon alternative. Patreon has high fees, including payment transaction fees, which, for a small $5-a-month creator, essentially doubles the platform fee from an already high 8% to an outrageous 16%. Stablecoins keep that at 8%, but I also intend to lower the platform fees for early creators and increase prices as they scale to accelerate the platform early on. I’m passively building the MVP while gauging creator interest before going all in. 
+        Suum is a project I&apos;m in the early stages of, which is a stablecoin-based Patreon alternative. Patreon has high fees, including payment transaction fees, which, for a small $5-a-month creator, essentially doubles the platform fee from an already high 8% to an outrageous 16%. Stablecoins keep that at 8%, but I also intend to lower the platform fees for early creators and increase prices as they scale to accelerate the platform early on. I&apos;m passively building the MVP while gauging creator interest before going all in. 
         </p>
       </motion.div>
     </motion.div>
@@ -263,7 +263,7 @@ const Home: FC = () => {
     </AnimatedParagraph>
 
     <AnimatedParagraph delay={0.2}>
-      <em>"As I become better at programming, I understand the connection Paul Graham makes in terms of hackers and painters. Coding really is creating art on a blank canvas. Both in looks and functionality, which I think makes it like a combination of art and music. It&apos;s really beautiful, quite honestly."</em>
+      <em>&quot;As I become better at programming, I understand the connection Paul Graham makes in terms of hackers and painters. Coding really is creating art on a blank canvas. Both in looks and functionality, which I think makes it like a combination of art and music. It&apos;s really beautiful, quite honestly.&quot;</em>
     </AnimatedParagraph>
 
     <AnimatedParagraph delay={0.4}>
