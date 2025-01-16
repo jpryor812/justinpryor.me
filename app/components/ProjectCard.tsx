@@ -115,8 +115,9 @@ const ProjectCard = ({
                 <Image
                     src={image.url}
                     alt={image.alt}
-                    width={300}
-                    height={200}
+                    width={200}
+                    height={120}
+                    loading="lazy"
                     className="w-72 h-full object-cover bg-green-200 rounded-xl p-2 shadow-xl"
                     style={{ border: 'none' }}
                 />

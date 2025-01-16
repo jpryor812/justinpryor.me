@@ -165,8 +165,9 @@ const Home: FC = () => {
           src="/patreon.png"
           alt="SuuM"
           className="w-auto h-full max-h-full object-contain"
-          width={300}
-          height={200}
+          width={200}
+          height={120}
+          loading="lazy"
         />
       </div>
       <div className="absolute inset-0 flex items-center justify-center">
@@ -217,8 +218,9 @@ const Home: FC = () => {
           src="/video-game-stock.png"
           alt="Video Game Footage to Video AI Tool"
           className="w-auto h-full max-h-full object-contain"
-          width={300}
-          height={200}
+          width={200}
+          height={120}
+          loading="lazy"
         />
       </div>
       <div className="absolute inset-0 flex items-center justify-center">
@@ -536,7 +538,7 @@ const Home: FC = () => {
         rel="noopener noreferrer" 
         className="hover:opacity-80 transition-opacity"
       >
-        <Image src="/mdi_github.png" alt="GitHub" className="w-10 h-10" width={300} height={200} />
+        <Image src="/mdi_github.png" alt="GitHub" className="w-10 h-10" width={100} height={100} loading="lazy" />
       </a>
       <a 
         href="https://www.youtube.com/channel/UC_bS1W9O8jpTE6gG9wss1rg" 
@@ -544,7 +546,7 @@ const Home: FC = () => {
         rel="noopener noreferrer" 
         className="hover:opacity-80 transition-opacity"
       >
-        <Image src="/logos_youtube-icon.png" alt="YouTube" className="w-14 h-10" width={300} height={200} />
+        <Image src="/logos_youtube-icon.png" alt="YouTube" className="w-14 h-10" width={100} height={100} loading="lazy" />
       </a>
       <a 
         href="https://www.linkedin.com/in/justin-pryor-959352150/" 
@@ -552,7 +554,7 @@ const Home: FC = () => {
         rel="noopener noreferrer" 
         className="hover:opacity-80 transition-opacity"
       >
-        <Image src="/devicon_linkedin.png" alt="LinkedIn" className="w-10 h-10" width={300} height={200} />
+        <Image src="/devicon_linkedin.png" alt="LinkedIn" className="w-10 h-10" width={100} height={100} loading="lazy" />
       </a>
       <a 
         href="https://x.com/Justin_Pryor_" 
@@ -560,7 +562,7 @@ const Home: FC = () => {
         rel="noopener noreferrer" 
         className="hover:opacity-80 transition-opacity"
       >
-        <Image src="/prime_twitter.png" alt="X (Twitter)" className="w-10 h-10" width={300} height={200} />
+        <Image src="/prime_twitter.png" alt="X (Twitter)" className="w-10 h-10" width={100} height={100} loading="lazy" />
       </a>
     </div>
 

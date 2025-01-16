@@ -156,8 +156,9 @@ const SmallProjectCard = ({
               <Image
                 src={image.url}
                 alt={image.alt}
-                width={300}
-                height={200}
+                width={200}
+                height={120}
+                loading="lazy"
                 className="w-full h-full object-cover bg-blue-300 rounded-xl p-2 shadow-xl"
               />
               <motion.a
