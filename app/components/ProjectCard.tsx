@@ -13,6 +13,7 @@ interface ProjectCardProps {
   }>;
   logoSrc: string;
   className?: string;
+  bgColor?: string;
 }
 
 const ProjectCard = ({ 
@@ -21,6 +22,7 @@ const ProjectCard = ({
   images,
   logoSrc,
   className = '',
+  bgColor = 'bg-blue-50',
 }: ProjectCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -38,8 +40,8 @@ const ProjectCard = ({
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        {/* Light blue backdrop */}
-        <div className="bg-blue-50 rounded-lg absolute inset-0"></div>
+        {/* Backdrop with custom color */}
+        <div className={`${bgColor} rounded-lg absolute inset-0`}></div>
         
         {/* Logo image positioned over the backdrop */}
         <div className="absolute inset-0 flex items-center justify-center">

@@ -26,6 +26,33 @@ export const projects = [
           ]
         },
         {
+          type: 'full',
+          title: 'SUMU',
+          description: 'Sumu is a new premium content platfrom for creators that aggregates all the best growth features from various platforms and enhances them, while having 0% transaction fees through stablecoin payments and rewarding creators with USDC and equity in Sumu itself. Sumu is currently pre-launch as I build the platform and reach out to hundreds of creators to onboard them before launching.',
+          logoSrc: '/sumu-header-logo-new.png',
+          bgColor: 'bg-[#001A0B]', 
+          images: [
+            {
+              url: '/sumu-landing-page-github.png',
+              alt: 'Sumu Landing Page Github',
+              title: 'Landing Page Github Repo',
+              link: 'https://github.com/jpryor812/sumu-landing-page'
+            },
+            {
+              url: '/sumu-landing-page.png',
+              alt: 'Sumu Landing Page',
+              title: 'Landing Page',
+              link: 'https://getsumu.xyz/'
+            },
+            {
+              url: '/sumu-web-app-github.png',
+              alt: 'Sumu Web App Github',
+              title: 'Web App Github Repo',
+              link: 'https://github.com/jpryor812/sumu-web-app-main'
+            }
+          ]
+        },
+        {
             type: 'small',
             bgColor: 'bg-purple-100',
             title: 'User Journeys',
