@@ -100,5 +100,47 @@ export const projects = [
               }
             ]
           },
+          {
+            type: 'small',
+            title: 'Edna - Shopify App',
+            description: "Launching soon: Edna is a Shopify app designed to help Shop merchants increase sales by improving product discoverability, site memorability, and larger total order values through a voice-enabled AI shopping assistant that help shoppers find exactly what they want with perfect accessories in rapid speed. As mobile shopping increases, merchants need to adapt to a new way of shopping to increase sales, and I believe Edna is an answer to that.",
+            logoSrc: '/edna-app.png',
+            bgColor: 'bg-blue-100', 
+            images: [
+              {
+                url: '/edna-github.png',
+                alt: 'Edna Shopify App Github',
+                title: 'Github Repo (most code in Gadget)',
+                link: 'https://github.com/jpryor812/edna-gadget'
+              },
+              {
+                url: '/edna-app.png',
+                alt: 'Edna Shopify App Screenshot',
+                title: 'Edna Video Demo',
+                link: 'https://www.loom.com/share/f04eda80ab184a5b87cff472834605be?sid=d63fa75b-d41a-42c7-a3e0-18597958a1b1'
+              },
+            ]
+          },
+          {
+          type: 'small',
+          title: 'Comparator Game',
+          description: "This is a game I built for my Mom's kindergarten class to help them learn greater than, less than, or equal to in an interactive way.",
+          logoSrc: '/comparator-game-screenshot-2.png',
+          bgColor: 'bg-green-100', 
+          images: [
+            {
+              url: '/comparator-game-github.png',
+              alt: 'Comparator Game Github',
+              title: 'Github Repo',
+              link: 'https://github.com/jpryor812/comparator-game'
+            },
+            {
+              url: '/comparator-game-screenshot-2.png',
+              alt: 'Comparator Game Screenshot',
+              title: 'Game',
+              link: 'https://comparatorgame.vercel.app/'
+            },
+          ]
+        },
     
       ];
