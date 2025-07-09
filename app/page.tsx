@@ -28,7 +28,7 @@ const Home: FC = () => {
     {!showAnimation && (
     <main>
       <Header />
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
   <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
     {/* Left side - Text */}
     <motion.div 
@@ -41,7 +41,7 @@ const Home: FC = () => {
       }}
     >
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold">
-        I&apos;m Justin, a founder, builder, and fanatic of excellent user experiences.
+        I&apos;m Justin, a founder, product builder, and student at Carnegie Mellon University.
       </h1>
     </motion.div>
 

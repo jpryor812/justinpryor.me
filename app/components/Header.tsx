@@ -4,6 +4,7 @@ import { Menu, X } from 'lucide-react';
 import '../globals.css';
 import { Racing_Sans_One } from 'next/font/google';
 import Link from 'next/link';
+import Image from 'next/image';
 const racingSansOne = Racing_Sans_One({
   subsets: ['latin'],
   weight: ['400'], // Use the available weights
@@ -61,18 +62,22 @@ const Header = () => {
             <Link href="/" className={`text-2xl font-500 ${racingSansOne.className}`}>
               Justin Pryor
             </Link>
+            <Image 
+              src="/cmu-scottie.png"
+              alt="CMU Scottie"
+              width={60}
+              height={60}
+              className="inline"
+              loading="lazy"
+            />
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
-            <Link href="/" className="text-blue-500">
-              Home
-            </Link>
             <a 
-              href="https://docs.google.com/document/d/1en4LjA52kor9kICJB1j14FYuVs7WxZsbtIvLAqA0diU/edit?tab=t.0" 
+              href="/Justin-Pryor-Resume-me.pdf" 
               className="px-4 py-2 bg-blue-400 text-white rounded-md hover:bg-blue-600 transition-colors"
-              target="_blank" 
-              rel="noopener noreferrer"
+              download="Justin-Pryor-Resume.pdf"
             >
               Resume
             </a>
@@ -121,10 +126,9 @@ const Header = () => {
                 </motion.div>
                 <motion.div custom={1} variants={menuItemVariants}>
                   <a
-                    href="https://docs.google.com/document/d/1en4LjA52kor9kICJB1j14FYuVs7WxZsbtIvLAqA0diU/edit?tab=t.0"
+                    href="/Justin-Pryor-Resume-me.pdf"
                     className="text-3xl text-black hover:text-purple-500 transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    download="Justin-Pryor-Resume.pdf"
                     onClick={() => setIsOpen(false)}
                   >
                     Resume

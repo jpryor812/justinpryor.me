@@ -26,59 +26,26 @@ export const projects = [
           ]
         },
         {
-          type: 'full',
-          title: 'SUMU',
-          description: 'Sumu is a new premium content platfrom for creators that aggregates all the best growth features from various platforms and enhances them, while having 0% transaction fees through stablecoin payments and rewarding creators with USDC and equity in Sumu itself. Sumu is currently pre-launch as I build the platform and reach out to hundreds of creators to onboard them before launching.',
-          logoSrc: '/sumu-header-logo-new.png',
-          bgColor: 'bg-[#001A0B]', 
+          type: 'small',
+          bgColor: 'bg-blue-100',
+          title: 'Coming Soon',
+          description: 'A product improving financial literacy, financial wellness, and career development for underserved communities.',
+          logoSrc: '/loading.png',
           images: [
-            {
-              url: '/sumu-landing-page-github.png',
-              alt: 'Sumu Landing Page Github',
-              title: 'Landing Page Github Repo',
-              link: 'https://github.com/jpryor812/sumu-landing-page'
-            },
-            {
-              url: '/sumu-landing-page.png',
-              alt: 'Sumu Landing Page',
-              title: 'Landing Page',
-              link: 'https://getsumu.xyz/'
-            },
-            {
-              url: '/sumu-web-app-github.png',
-              alt: 'Sumu Web App Github',
-              title: 'Web App Github Repo',
-              link: 'https://github.com/jpryor812/sumu-web-app-main'
-            }
-          ]
-        },
-        {
-            type: 'small',
-            bgColor: 'bg-purple-100',
-            title: 'User Journeys',
-            description: 'User Journeys is a YouTube channel/blog where I analyze the discovery, onboarding, and in-app experience of top-rated mobile apps from a UX and growth perspective. I analyze every detail, and the videos typically last 45 minutes or more. When finished, I email the product teams at these companies for answers to my outstanding questions. I do this to study and learn from the best, and eventually, I hope to review fan-submitted apps.',
-            logoSrc: '/UJ2.png',
-            images: [
-              {
-                url: '/UJ-blog.png',
-                alt: 'User Journeys Blog',
-                title: 'User Journeys Blog',
-                link: 'https://www.userjourneys.blog/'
-              },
-              {
-                url: '/UJ-youtube.png',
-                alt: 'User Journeys Youtube',
-                title: 'Youtube Channel',
-                link: 'https://www.youtube.com/@user_journeys'
-              },
-              {
-                url: '/UJ-github.png',
-                alt: 'User Journeys Github',
-                title: 'Github Repo',
-                link: 'https://github.com/jpryor812/user_journey_blog'
-              }
-            ]
+          {
+            url: '/loading.png',
+            alt: 'Loading',
+            title: 'Loading',
+            link: ''
           },
+          {
+            url: '/loading.png',
+            alt: 'Loading',
+            title: 'Loading',
+            link: ''
+          }
+        ]
+        },
           {
             type: 'small',
             bgColor: 'bg-orange-100',
@@ -101,26 +68,32 @@ export const projects = [
             ]
           },
           {
-            type: 'small',
-            title: 'Edna - Shopify App',
-            description: "Launching soon: Edna is a Shopify app designed to help Shop merchants increase sales by improving product discoverability, site memorability, and larger total order values through a voice-enabled AI shopping assistant that help shoppers find exactly what they want with perfect accessories in rapid speed. As mobile shopping increases, merchants need to adapt to a new way of shopping to increase sales, and I believe Edna is an answer to that.",
-            logoSrc: '/edna-app.png',
-            bgColor: 'bg-blue-100', 
-            images: [
-              {
-                url: '/edna-github.png',
-                alt: 'Edna Shopify App Github',
-                title: 'Github Repo (most code in Gadget)',
-                link: 'https://github.com/jpryor812/edna-gadget'
-              },
-              {
-                url: '/edna-app.png',
-                alt: 'Edna Shopify App Screenshot',
-                title: 'Edna Video Demo',
-                link: 'https://www.loom.com/share/f04eda80ab184a5b87cff472834605be?sid=d63fa75b-d41a-42c7-a3e0-18597958a1b1'
-              },
-            ]
-          },
+              type: 'small',
+              bgColor: 'bg-purple-100',
+              title: 'User Journeys',
+              description: 'User Journeys is a YouTube channel/blog where I analyze the discovery, onboarding, and in-app experience of top-rated mobile apps from a UX and growth perspective. I analyze every detail, and the videos typically last 45 minutes or more. When finished, I email the product teams at these companies for answers to my outstanding questions. I do this to study and learn from the best, and eventually, I hope to review fan-submitted apps.',
+              logoSrc: '/UJ2.png',
+              images: [
+                {
+                  url: '/UJ-blog.png',
+                  alt: 'User Journeys Blog',
+                  title: 'User Journeys Blog',
+                  link: 'https://www.userjourneys.blog/'
+                },
+                {
+                  url: '/UJ-youtube.png',
+                  alt: 'User Journeys Youtube',
+                  title: 'Youtube Channel',
+                  link: 'https://www.youtube.com/@user_journeys'
+                },
+                {
+                  url: '/UJ-github.png',
+                  alt: 'User Journeys Github',
+                  title: 'Github Repo',
+                  link: 'https://github.com/jpryor812/user_journey_blog'
+                }
+              ]
+            },
           {
           type: 'small',
           title: 'Comparator Game',
