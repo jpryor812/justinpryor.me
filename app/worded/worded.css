@@ -1,0 +1,98 @@
+.worded-root {
+  --worded-teal: #214f63;
+  --worded-teal-deep: #163744;
+  --worded-teal-light: #2d6a7e;
+  --worded-cream: #f5eddb;
+  --worded-tile: #faebc7;
+  --worded-wood: #b88547;
+  --worded-ink: #472e14;
+  --worded-orange: #f28f30;
+  --worded-orange-dark: #cc6b1a;
+
+  min-height: 100vh;
+  color: var(--worded-cream);
+  background:
+    radial-gradient(ellipse 90% 60% at 70% 20%, rgba(242, 143, 48, 0.18), transparent 55%),
+    radial-gradient(ellipse 70% 50% at 10% 80%, rgba(45, 106, 126, 0.55), transparent 50%),
+    linear-gradient(165deg, var(--worded-teal-light) 0%, var(--worded-teal) 40%, var(--worded-teal-deep) 100%);
+  font-family: var(--font-worded-body), "Nunito", sans-serif;
+}
+
+.worded-root * {
+  box-sizing: border-box;
+}
+
+.worded-display {
+  font-family: var(--font-worded-display), "Fredoka", sans-serif;
+}
+
+@keyframes worded-glow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 18px rgba(242, 143, 48, 0.35));
+    transform: translateY(0);
+  }
+  50% {
+    filter: drop-shadow(0 0 32px rgba(242, 143, 48, 0.55));
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes worded-spark {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}
+
+.worded-hero-art {
+  animation: worded-glow 5.5s ease-in-out infinite;
+}
+
+.worded-spark {
+  animation: worded-spark 2.8s ease-in-out infinite;
+}
+
+.worded-spark-delay {
+  animation-delay: 1.1s;
+}
+
+.worded-contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 0.95rem 1.75rem;
+  border-radius: 1.15rem;
+  background: linear-gradient(180deg, #ffb056 0%, var(--worded-orange) 55%, var(--worded-orange-dark) 100%);
+  color: #fff;
+  font-family: var(--font-worded-display), "Fredoka", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  box-shadow:
+    0 10px 24px rgba(204, 107, 26, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.28);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.worded-contact:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow:
+    0 14px 28px rgba(204, 107, 26, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.28);
+}
+
+.worded-contact:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.worded-phone {
+  filter: drop-shadow(0 28px 48px rgba(0, 0, 0, 0.4));
+}
